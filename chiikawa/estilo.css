@@ -156,3 +156,4 @@ body.oscuro input, body.oscuro textarea, body.oscuro select {
 }
 body.oscuro .filtro { background-color: #3a2c3f; color: #f3e9ee; }
 body.oscuro .filtro.activo { background-color: #e86a92; color: white; }
+@import url('https://fonts.googleapis.com/css2?family=Agrave+Pro:wght@100..700&display=swap');
