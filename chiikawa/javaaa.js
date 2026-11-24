@@ -184,9 +184,9 @@ if (localStorage.getItem("modo") === "oscuro") {
 
 function textoModo() {
   if (document.body.classList.contains("oscuro")) {
-    botonModo.textContent = "☀️ Modo claro";
+    botonModo.textContent = "Modo claro";
   } else {
-    botonModo.textContent = "🌙 Modo noche";
+    botonModo.textContent = "Modo oscuro";
   }
 }
 textoModo();
