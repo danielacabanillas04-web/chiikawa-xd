@@ -108,7 +108,7 @@ if (botonComprar) {
       mensaje.textContent = "Agrega al menos un peluche primero.";
       mensaje.style.color = "red";
     } else {
-      mensaje.textContent = "¡Gracias por tu compra! 💖";
+      mensaje.textContent = "Gracias por tu compra!";
       mensaje.style.color = "green";
       carrito = [];
       guardar();
