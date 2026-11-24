@@ -1,11 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Agrave+Pro:wght@100..700&display=swap');
+
+/* ===== GENERAL ===== */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
-  font-family: 'Segoe UI', Arial, sans-serif;
+  font-family: "Agrave Pro", cursive;
   background-color: #fff5f8;
   color: #5a4a50;
 }
-
 section { padding: 40px 20px; text-align: center; }
 
 h2 { margin-bottom: 20px; color: #e86a92; }
@@ -156,4 +158,3 @@ body.oscuro input, body.oscuro textarea, body.oscuro select {
 }
 body.oscuro .filtro { background-color: #3a2c3f; color: #f3e9ee; }
 body.oscuro .filtro.activo { background-color: #e86a92; color: white; }
-@import url('https://fonts.googleapis.com/css2?family=Agrave+Pro:wght@100..700&display=swap');
