@@ -4,7 +4,22 @@ function guardar() {
   localStorage.setItem("carrito", JSON.stringify(carrito));
   actualizarContador();
 }
+var botonSubir = document.createElement("button");
+botonSubir.id = "subir";
+botonSubir.textContent = "Subir";
+document.body.appendChild(botonSubir);
 
+window.addEventListener("scroll", function () {
+  if (window.scrollY > 300) {
+    botonSubir.style.display = "block";
+  } else {
+    botonSubir.style.display = "none";
+  }
+});
+
+botonSubir.addEventListener("click", function () {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
 function actualizarContador() {
   var span = document.getElementById("cantidad");
   if (!span) return;
