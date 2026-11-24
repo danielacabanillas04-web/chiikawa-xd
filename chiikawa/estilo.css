@@ -142,7 +142,7 @@ footer { background-color: #ffd6e5; text-align: center; padding: 20px; }
   nav a { margin: 0 3px; }
   .portada h2 { font-size: 28px; }
 }
-/* ===== MODO NOCHE ===== */
+/* modo bn black */
 #modo { margin-left: 15px; padding: 6px 12px; font-size: 14px; }
 
 body.oscuro { background-color: #1e1a22; color: #f3e9ee; }
