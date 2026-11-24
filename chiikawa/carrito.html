@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito | Chiikawa Store</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+  <header>
+    <h1>Chiikawa shopping</h1>
+    <nav>
+      <a href="codigo.html" >Inicio</a>
+      <a href="peluches.html" >Peluches</a>
+      <a href="contacto.html" >Contacto</a>
+      <a href="carrito.html" class="activo">Carrito de compras (<span id="cantidad">0</span>)</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Tu carrito</h2>
+    <table>
+      <thead>
+        <tr><th>Peluche</th><th>Precio</th><th>Cant.</th><th>Subtotal</th><th></th></tr>
+      </thead>
+      <tbody id="tablaCarrito"></tbody>
+    </table>
+    <p id="carritoVacio">Tu carrito está vacío</p>
+    <h3 class="totalTexto">Total: S/ <span id="total">0</span></h3>
+    <button id="vaciar" class="boton">Vaciar carrito</button>
+    <button id="comprar" class="boton">Comprar</button>
+    <p id="mensajeCompra"></p>
+  </section>
+
+ <footer>
+    <p>Encuentranos en tik tok e instagram como @yourchiikawastore</p>
+  </footer>
+  <script src="javaaa.js"></script>
+</body>
+</html>

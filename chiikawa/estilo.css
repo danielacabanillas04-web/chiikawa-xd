@@ -1,0 +1,158 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #fff5f8;
+  color: #5a4a50;
+}
+
+section { padding: 40px 20px; text-align: center; }
+
+h2 { margin-bottom: 20px; color: #e86a92; }
+
+/*botones*/
+.boton, .agregar, .filtro {
+  background-color: #ff8fb1;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 16px;
+  display: inline-block;
+}
+.boton:hover, .agregar:hover, .filtro:hover { background-color: #e86a92; }
+
+/*encabezado*/
+header {
+  background-color: #ffd6e5;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+header h1 { color: #e86a92; font-size: 24px; }
+nav a {
+  margin-left: 15px;
+  color: #5a4a50;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 6px 10px;
+  border-radius: 15px;
+}
+nav a:hover, nav a.activo { background-color: white; color: #e86a92; }
+
+/* portada */
+.portada {
+  background-image: url("imagenes/banner.jpeg");
+  background-size: cover;
+  background-position: center;
+  padding: 90px 20px;
+}
+.portada h2 { font-size: 38px; color: #4a9bc2; }
+.portada p { margin-bottom: 25px; font-size: 18px; }
+
+/* ===== TARJETAS ===== */
+.contenedor {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto 30px;
+}
+.tarjeta {
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+.tarjeta:hover { transform: translateY(-5px); }
+.foto {
+  font-size: 70px;
+  background-color: #fff0f5;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.foto img { width: 100%; border-radius: 10px; }
+.categoria {
+  font-size: 13px;
+  text-transform: capitalize;
+  color: #4a9bc2;
+}
+.precio { margin: 8px 0 12px; font-weight: bold; font-size: 18px; }
+
+/* ===== BENEFICIOS ===== */
+.beneficios { background-color: #fffbe0; }
+.caja { background-color: white; padding: 20px; border-radius: 15px; }
+.caja span { font-size: 40px; }
+
+/* ===== BUSCADOR Y FILTROS ===== */
+#buscador { max-width: 400px; margin-bottom: 15px; }
+.filtros { margin-bottom: 25px; }
+.filtro { background-color: #ffd6e5; color: #5a4a50; margin: 4px; }
+.filtro.activo { background-color: #e86a92; color: white; }
+#sinResultados { display: none; font-size: 18px; }
+
+/* ===== TABLA CARRITO ===== */
+table {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto 20px;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+th { background-color: #ffd6e5; }
+th, td { padding: 12px; border-bottom: 1px solid #ffe3ec; }
+.quitar { background: none; border: none; cursor: pointer; font-size: 18px; }
+.totalTexto { margin: 20px 0; font-size: 24px; }
+#mensajeCompra { margin-top: 15px; font-weight: bold; color: green; }
+
+/* ===== FORMULARIO ===== */
+form { max-width: 400px; margin: 0 auto; }
+input, textarea, select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #ffd6e5;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: inherit;
+}
+input:focus, textarea:focus, select:focus { outline: none; border-color: #e86a92; }
+#aviso { margin-top: 10px; font-weight: bold; }
+
+/* ===== FOOTER ===== */
+footer { background-color: #ffd6e5; text-align: center; padding: 20px; }
+
+/* ===== CELULAR ===== */
+@media (max-width: 700px) {
+  header { flex-direction: column; gap: 10px; }
+  nav a { margin: 0 3px; }
+  .portada h2 { font-size: 28px; }
+}
+/* ===== MODO NOCHE ===== */
+#modo { margin-left: 15px; padding: 6px 12px; font-size: 14px; }
+
+body.oscuro { background-color: #1e1a22; color: #f3e9ee; }
+body.oscuro header, body.oscuro footer { background-color: #3a2c3f; }
+body.oscuro nav a { color: #f3e9ee; }
+body.oscuro nav a:hover, body.oscuro nav a.activo { background-color: #2b2430; }
+body.oscuro .tarjeta, body.oscuro .caja, body.oscuro table { background-color: #2b2430; }
+body.oscuro .foto, body.oscuro th { background-color: #3a2c3f; }
+body.oscuro .portada { background-color: #2a3a48; }
+body.oscuro .beneficios { background-color: #2b2a22; }
+body.oscuro input, body.oscuro textarea, body.oscuro select {
+  background-color: #2b2430;
+  color: #f3e9ee;
+  border-color: #5a4a60;
+}
+body.oscuro .filtro { background-color: #3a2c3f; color: #f3e9ee; }
+body.oscuro .filtro.activo { background-color: #e86a92; color: white; }

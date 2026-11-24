@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peluches | Chiikawa Store</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+  <header>
+    <h1>Chiikawa shopping</h1>
+    <nav>
+      <a href="codigo.html" >Inicio</a>
+      <a href="peluches.html" class="activo">Peluches</a>
+      <a href="contacto.html" >Contacto</a>
+      <a href="carrito.html" >Carrito de compras(<span id="cantidad">0</span>)</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Todos los peluches</h2>
+
+    <input type="text" id="buscador" placeholder="Busca un personaje...">
+
+    <div class="filtros">
+      <button class="filtro activo" data-categoria="todos">Todos</button>
+      <button class="filtro" data-categoria="pequeño">Pequeños</button>
+      <button class="filtro" data-categoria="mediano">Medianos</button>
+      <button class="filtro" data-categoria="grande">Grandes</button>
+    </div>
+
+    <div class="contenedor">
+      <div class="tarjeta" data-categoria="grande">
+        <div class="foto"><img src="imagenes/Chiikawa.jpeg" alt="Chiikawa"></div>
+        <h3>Chiikawa</h3>
+        <p class="categoria">grande</p>
+        <p class="precio">S/ 65</p>
+        <button class="agregar" data-nombre="Chiikawa" data-precio="65">Agregar al carrito</button>
+      </div>
+
+      <div class="tarjeta" data-categoria="grande">
+        <!-- Para usar foto: <img src="imagenes/Hachiware.jpg" alt="Hachiware"> -->
+        <div class="foto"><img src="imagenes/Hachiware.jpeg" alt="Hachiware"></div>
+        <h3>Hachiware</h3>
+        <p class="categoria">grande</p>
+        <p class="precio">S/ 65</p>
+        <button class="agregar" data-nombre="Hachiware" data-precio="65">Agregar al carrito</button>
+      </div>
+
+      <div class="tarjeta" data-categoria="grande">
+        <div class="foto"><img src="imagenes/Usagi.jpeg" alt="Usagi"></div>
+        <h3>Usagi</h3>
+        <p class="categoria">grande</p>
+        <p class="precio">S/ 65</p>
+        <button class="agregar" data-nombre="Usagi" data-precio="65">Agregar al carrito</button>
+      </div>
+
+      <div class="tarjeta" data-categoria="mediano">
+        <div class="foto"><img src="imagenes/Momonga.jpeg" alt="Momonga"></div>
+        <h3>Momonga</h3>
+        <p class="categoria">mediano</p>
+        <p class="precio">S/ 50</p>
+        <button class="agregar" data-nombre="Momonga" data-precio="50">Agregar al carrito</button>
+      </div>
+
+      <div class="tarjeta" data-categoria="pequeño"> 
+        <div class="foto"><img src="imagenes/Kurimanju.jpeg" alt="Kurimanju"></div>
+        <h3>Kurimanju</h3>
+        <p class="categoria">pequeño</p>
+        <p class="precio">S/ 35</p>
+        <button class="agregar" data-nombre="Kurimanju" data-precio="35">Agregar al carrito</button>
+      </div>
+
+      <div class="tarjeta" data-categoria="mediano">
+        <div class="foto"><img src="imagenes/Rakko.jpeg" alt="Rakko"></div>
+        <h3>Rakko</h3>
+        <p class="categoria">mediano</p>
+        <p class="precio">S/ 50</p>
+        <button class="agregar" data-nombre="Rakko" data-precio="50">Agregar al carrito</button>
+      </div>
+
+      <div class="tarjeta" data-categoria="grande">
+        <div class="foto"><img src="imagenes/Shisa.jpeg" alt="Shisa"></div>
+        <h3>Shisa</h3>
+        <p class="categoria">grande</p>
+        <p class="precio">S/ 65</p>
+        <button class="agregar" data-nombre="Shisa" data-precio="65">Agregar al carrito</button>
+      </div>
+
+      <div class="tarjeta" data-categoria="grande">
+        <div class="foto"><img src="imagenes/Furuhonya.jpeg" alt="Furuhonya"></div>
+        <h3>Furuhonya</h3>
+        <p class="categoria">grande</p>
+        <p class="precio">S/ 65</p>
+        <button class="agregar" data-nombre="Furuhonya" data-precio="65">Agregar al carrito</button>
+      </div>
+
+    </div>
+    <p id="sinResultados">No encontramos ese peluche :c</p>
+  </section>
+
+  <script src="javaaa.js"></script>
+</body>
+</html>
