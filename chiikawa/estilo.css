@@ -23,7 +23,20 @@ h2 { margin-bottom: 20px; color: #e86a92; }
   display: inline-block;
 }
 .boton:hover, .agregar:hover, .filtro:hover { background-color: #e86a92; }
-
+#subir {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #e86a92;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: inherit;
+  z-index: 20;
+}
 header {
   background-color: #ffd6e5;
   padding: 15px 30px;
