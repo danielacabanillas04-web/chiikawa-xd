@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Agrave+Pro:wght@100..700&display=swap');
 
-/* ===== GENERAL ===== */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
@@ -12,7 +11,6 @@ section { padding: 40px 20px; text-align: center; }
 
 h2 { margin-bottom: 20px; color: #e86a92; }
 
-/*botones*/
 .boton, .agregar, .filtro {
   background-color: #ff8fb1;
   color: white;
@@ -26,7 +24,6 @@ h2 { margin-bottom: 20px; color: #e86a92; }
 }
 .boton:hover, .agregar:hover, .filtro:hover { background-color: #e86a92; }
 
-/*encabezado*/
 header {
   background-color: #ffd6e5;
   padding: 15px 30px;
@@ -49,7 +46,6 @@ nav a {
 }
 nav a:hover, nav a.activo { background-color: white; color: #e86a92; }
 
-/* portada */
 .portada {
   background-image: url("imagenes/banner.jpeg");
   background-size: cover;
@@ -59,7 +55,6 @@ nav a:hover, nav a.activo { background-color: white; color: #e86a92; }
 .portada h2 { font-size: 38px; color: #4a9bc2; }
 .portada p { margin-bottom: 25px; font-size: 18px; }
 
-/* ===== TARJETAS ===== */
 .contenedor {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -89,19 +84,16 @@ nav a:hover, nav a.activo { background-color: white; color: #e86a92; }
 }
 .precio { margin: 8px 0 12px; font-weight: bold; font-size: 18px; }
 
-/* ===== BENEFICIOS ===== */
 .beneficios { background-color: #fffbe0; }
 .caja { background-color: white; padding: 20px; border-radius: 15px; }
 .caja span { font-size: 40px; }
 
-/* ===== BUSCADOR Y FILTROS ===== */
 #buscador { max-width: 400px; margin-bottom: 15px; }
 .filtros { margin-bottom: 25px; }
 .filtro { background-color: #ffd6e5; color: #5a4a50; margin: 4px; }
 .filtro.activo { background-color: #e86a92; color: white; }
 #sinResultados { display: none; font-size: 18px; }
 
-/* ===== TABLA CARRITO ===== */
 table {
   width: 100%;
   max-width: 700px;
@@ -117,7 +109,6 @@ th, td { padding: 12px; border-bottom: 1px solid #ffe3ec; }
 .totalTexto { margin: 20px 0; font-size: 24px; }
 #mensajeCompra { margin-top: 15px; font-weight: bold; color: green; }
 
-/* ===== FORMULARIO ===== */
 form { max-width: 400px; margin: 0 auto; }
 input, textarea, select {
   width: 100%;
@@ -131,10 +122,8 @@ input, textarea, select {
 input:focus, textarea:focus, select:focus { outline: none; border-color: #e86a92; }
 #aviso { margin-top: 10px; font-weight: bold; }
 
-/* ===== FOOTER ===== */
 footer { background-color: #ffd6e5; text-align: center; padding: 20px; }
 
-/* ===== CELULAR ===== */
 @media (max-width: 700px) {
   header { flex-direction: column; gap: 10px; }
   nav a { margin: 0 3px; }
