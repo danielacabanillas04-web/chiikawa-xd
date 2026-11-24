@@ -1,4 +1,3 @@
-// ===== CARRITO (se guarda en localStorage para que no se pierda al cambiar de página) =====
 var carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
 function guardar() {
@@ -16,7 +15,6 @@ function actualizarContador() {
   span.textContent = cantidad;
 }
 
-// ----- Botones "Agregar al carrito" -----
 var botonesAgregar = document.querySelectorAll(".agregar");
 
 for (var i = 0; i < botonesAgregar.length; i++) {
@@ -36,7 +34,6 @@ for (var i = 0; i < botonesAgregar.length; i++) {
     }
     guardar();
 
-    // mensaje temporal en el botón
     var boton = this;
     boton.textContent = "¡Agregado! ✔";
     setTimeout(function () {
@@ -45,7 +42,6 @@ for (var i = 0; i < botonesAgregar.length; i++) {
   });
 }
 
-// ----- Página del carrito -----
 var tabla = document.getElementById("tablaCarrito");
 
 function mostrarCarrito() {
@@ -69,7 +65,6 @@ function mostrarCarrito() {
   document.getElementById("total").textContent = total;
   document.getElementById("carritoVacio").style.display = carrito.length === 0 ? "block" : "none";
 
-  // botones para quitar un producto
   var quitar = document.querySelectorAll(".quitar");
   for (var k = 0; k < quitar.length; k++) {
     quitar[k].addEventListener("click", function () {
@@ -107,7 +102,6 @@ if (botonComprar) {
   });
 }
 
-// ===== BUSCADOR Y FILTROS (solo en peluches.html) =====
 var buscador = document.getElementById("buscador");
 var categoriaActual = "todos";
 
@@ -149,7 +143,6 @@ if (buscador) {
   }
 }
 
-// ===== FORMULARIO (solo en contacto.html) =====
 var formulario = document.getElementById("formulario");
 
 if (formulario) {
@@ -176,7 +169,6 @@ if (formulario) {
   });
 }
 
-// ===== AL CARGAR CUALQUIER PÁGINA =====
 actualizarContador();
 mostrarCarrito();
 // ===== MODO NOCHE =====
